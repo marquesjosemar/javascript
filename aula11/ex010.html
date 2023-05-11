@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naiconalidade</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    <input type="text" name="nac" id="país">
+    <input type="button" value="enviar" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        function verificar(){
+            var país = window.document.querySelector('input#país').value.toUpperCase()
+            var resultado = window.document.querySelector('div#resultado')
+
+             resultado.innerText = `seu país de origem é: ${país}` //resultado que é mostrado na tela após o usuário inserir os dados. Diretamente relacionado ao input.
+             if (país == 'BRASIL') {
+                resultado.innerHTML += `<p>Você é Brasileiro.</p>`
+             } else {
+                resultado.innerHTML += `<p>Você é Estrangeiro.</p>`
+             }
+        }
+    </script>
+</body>
+</html>
+

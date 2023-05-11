@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com Dom</title>
+</head>
+<style>
+    html, body {
+        background-color: rgb(86, 86, 167);
+        color: white;
+    }
+
+    
+</style>
+
+<body>
+    <main>
+        
+        <h1>Iniciando os estudos com DOM</h1>
+        <p>meu parágrafo</p>
+        <p>outro exemplo de parágrafo</p>
+        <div id="caixa">clica em mim</div>
+        
+        <script>
+            window.document.write('olá mundo')
+
+            var p1 = document.querySelector('#caixa')
+            p1.style.background='green'
+            
+        </script>
+
+    </main>
+
+</body>
+</html>
